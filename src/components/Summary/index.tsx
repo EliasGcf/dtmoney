@@ -1,9 +1,9 @@
 import totalImg from '../../assets/total.svg';
 import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg';
-import {  useTransactions } from '../../hooks/useTransactions';
 
 import { Container } from './styles';
+import { useTransactions } from '../../context/TransactionsContext/hooks/useTransactions';
 
 export function Summary() {
   const { transactions } = useTransactions();
