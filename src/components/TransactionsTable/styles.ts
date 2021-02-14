@@ -7,7 +7,6 @@ export const Container = styled.div`
     width: 100%;
     border-spacing: 0 0.5rem;
 
-
     th {
       color: var(--text-body);
       font-weight: 400;
@@ -32,7 +31,7 @@ export const Container = styled.div`
       }
 
       &.withdraw {
-        color: var(--red)
+        color: var(--red);
       }
     }
   }

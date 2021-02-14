@@ -29,7 +29,7 @@ export const Container = styled.form`
     }
   }
 
-  button[type=submit] {
+  button[type='submit'] {
     width: 100%;
     padding: 0 1.5rem;
     height: 4rem;
@@ -71,10 +71,8 @@ export const RadioBox = styled.button<RadioBoxProps>`
   border: 1px solid #d7d7d7;
   border-radius: 0.25rem;
 
-  background: ${(props) => props.isActive
-    ? transparentize(0.9, colors[props.activeColor])
-    : 'none'
-  };
+  background: ${props =>
+    props.isActive ? transparentize(0.9, colors[props.activeColor]) : 'none'};
 
   display: flex;
   justify-content: center;
@@ -83,7 +81,7 @@ export const RadioBox = styled.button<RadioBoxProps>`
   transition: border-color 0.2s;
 
   &:hover {
-    border-color: ${darken(0.1, '#d7d7d7')}
+    border-color: ${darken(0.1, '#d7d7d7')};
   }
 
   img {
