@@ -6,9 +6,5 @@ interface AppContextProviderProps {
 }
 
 export function AppContextProvider({ children }: AppContextProviderProps) {
-  return (
-    <TransactionsProvider>
-      {children}
-    </TransactionsProvider>
-  )
+  return <TransactionsProvider>{children}</TransactionsProvider>;
 }
